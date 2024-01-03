@@ -12,3 +12,10 @@ If the entry point is not ambiguous, pants successfully infers the dependency. I
 # using file name to another module works fine though
 pants run bar:works
 ```
+
+Explicitly defining a dependency works, too.
+
+```sh
+# 'main' as explicit dependency, not inferred
+pants run foo:works
+```
